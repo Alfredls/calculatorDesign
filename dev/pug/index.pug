@@ -1,0 +1,60 @@
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/fonts.css")
+    link(rel="stylesheet", href="css/styles.css")
+    title Document
+  body 
+    .main
+      .calculator#calculator
+        .top-bar 
+          .mode-dark
+            span.active-dark#active-span
+            .mode-dark__content#active-dark
+              img(src="icon/sun.svg", alt="sun").mode-dark__img
+            .mode-dark__content#active-light
+              img(src="icon/luna.svg", alt="luna").mode-dark__img
+
+          .buttom-lite
+            .buttom-lite__img#buttom-lite
+            
+        .screen 
+          .screen__top#operaciones 0
+          .screen__content#resultado = 0
+        .swicht
+          .swicht__box#swichtbox
+          .swicht__content.swicht-basic#basic Basic
+          .swicht__content#scientific Scientific 
+
+        .buttons#buttons
+          #button-7.button 7
+          #button-8.button 8
+          #button-9.button 9
+          #button-back.button.button--color
+            .btn-back#btn-back
+          #button-clear.button.button--color C
+
+          #button-4.button 4
+          #button-5.button 5
+          #button-6.button 6
+          #button-multiply.button  × 
+          #button-divide.button  ÷ 
+
+          #button-1.button 1
+          #button-2.button 2
+          #button-3.button 3
+          #button-sum.button  + 
+          #button-minus.button  - 
+
+          #button-percent.button  % 
+          #button-zero.button 0
+          #button-point.button .
+          #button-equal.button.button--color =
+
+    audio(src="sound/mix.wav" preload = "auto")#soundMix
+    audio(src="sound/key-press.wav" preload = "auto")#soundKey
+    script(src="js/script.js") 

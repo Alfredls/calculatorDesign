@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+  </head>
+  <body> 
+    <div class="main">
+      <div class="calculator" id="calculator">
+        <div class="top-bar"> 
+          <div class="mode-dark"><span class="active-dark" id="active-span"></span>
+            <div class="mode-dark__content" id="active-dark"><img class="mode-dark__img" src="icon/sun.svg" alt="sun"></div>
+            <div class="mode-dark__content" id="active-light"><img class="mode-dark__img" src="icon/luna.svg" alt="luna"></div>
+          </div>
+          <div class="buttom-lite">
+            <div class="buttom-lite__img" id="buttom-lite"></div>
+          </div>
+        </div>
+        <div class="screen"> 
+          <div class="screen__top" id="operaciones">0</div>
+          <div class="screen__content" id="resultado">= 0</div>
+        </div>
+        <div class="swicht">
+          <div class="swicht__box" id="swichtbox"></div>
+          <div class="swicht__content swicht-basic" id="basic">Basic</div>
+          <div class="swicht__content" id="scientific">Scientific </div>
+        </div>
+        <div class="buttons" id="buttons">
+          <div class="button" id="button-7">7</div>
+          <div class="button" id="button-8">8</div>
+          <div class="button" id="button-9">9</div>
+          <div class="button button--color" id="button-back">
+            <div class="btn-back" id="btn-back"></div>
+          </div>
+          <div class="button button--color" id="button-clear">C</div>
+          <div class="button" id="button-4">4</div>
+          <div class="button" id="button-5">5</div>
+          <div class="button" id="button-6">6</div>
+          <div class="button" id="button-multiply"> × </div>
+          <div class="button" id="button-divide"> ÷ </div>
+          <div class="button" id="button-1">1</div>
+          <div class="button" id="button-2">2</div>
+          <div class="button" id="button-3">3</div>
+          <div class="button" id="button-sum"> + </div>
+          <div class="button" id="button-minus"> - </div>
+          <div class="button" id="button-percent"> % </div>
+          <div class="button" id="button-zero">0</div>
+          <div class="button" id="button-point">.</div>
+          <div class="button button--color" id="button-equal">=</div>
+        </div>
+      </div>
+    </div>
+    <audio src="sound/mix.wav" preload="auto" id="soundMix"></audio>
+    <audio src="sound/key-press.wav" preload="auto" id="soundKey"></audio>
+    <script src="js/script.js"> </script>
+  </body>
+</html>
